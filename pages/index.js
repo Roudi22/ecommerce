@@ -5,7 +5,7 @@ const index = ({ products, bannerData}) => {
   return (
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]}/>
-      {console.log(bannerData)}
+      
       <div className='products-heading'>
         <h2>Best Selling Products</h2>
         <p>Cameras of many variations</p>
@@ -13,7 +13,7 @@ const index = ({ products, bannerData}) => {
 
       <div className='products-container'>
         {products?.map((product)=> 
-          product.name
+          <Product key={product._id} product={product}/>
         )}
       </div>
 
