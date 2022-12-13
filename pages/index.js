@@ -3,7 +3,7 @@ import { Product, FooterBanner, HeroBanner} from "../components"
 const index = () => {
   return (
     <>
-      HeroBanner
+      <HeroBanner/>
       <div className='products-heading'>
         <h2>Best Selling Products</h2>
         <p>Cameras of many variations</p>
@@ -15,7 +15,7 @@ const index = () => {
         )}
       </div>
 
-      footer
+      <FooterBanner/>
     </>
   )
 }
